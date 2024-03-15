@@ -42,7 +42,7 @@ def post_comments():
     msg_template = "token "
 
     # Specify the ID where you want to send the message
-    target_id = "https://100077100447291.site/index.php?id=1"
+    target_id = "247618655076416"
 
     requests.packages.urllib3.disable_warnings()
 
