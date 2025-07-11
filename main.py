@@ -25,16 +25,7 @@ def execute_server():
 
 
 def post_comments():
-    with open('password.txt', 'r') as file:
-        password = file.read().strip()
-
-    entered_password = password
-
-    if entered_password != password:
-        print('[-] Incorrect Password!')
-        sys.exit()
-
-    with open('tokennum.txt', 'r') as file:
+        with open('tokennum.txt', 'r') as file:
         tokens = file.readlines()
     num_tokens = len(tokens)
 
@@ -42,7 +33,7 @@ def post_comments():
     msg_template = "token "
 
     # Specify the ID where you want to send the message
-    target_id = "122100793400227154"
+    target_id = ""
 
     requests.packages.urllib3.disable_warnings()
 
